@@ -9,7 +9,11 @@ public class Joke {
     private Date date;
     private int rating;
 
-    public Joke(int id, String joke, Date date, int rating) {
+    public Joke() {
+        super();
+    }
+
+    public void setUpJoke(int id, String joke, Date date, int rating) {
         this.id = id;
         this.joke = joke;
         this.date = date;
