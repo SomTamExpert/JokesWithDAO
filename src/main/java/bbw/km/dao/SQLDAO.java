@@ -1,13 +1,8 @@
 package bbw.km.dao;
 
-import bbw.km.model.Joke;
 import bbw.km.model.JokeBook;
-import bbw.km.model.JokeFillerSQL;
-import com.mysql.cj.protocol.Resultset;
 
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Class SQL DAO
@@ -25,14 +20,14 @@ public class SQLDAO implements JokeDAO {
     }
 
     @Override
-    public List getAllJokes() {
-        List<Joke> jokes = new ArrayList<Joke>();
+    public JokeBook getAllJokes() {
+        JokeBook jokeBook = new JokeBook();
         try {
             Statement statement = getConnection().createStatement();
             ResultSet foundEntries = statement.executeQuery("SELECT * FROM joke");
 
             while (foundEntries.next()) {
-                jokes.add(JokeFillerSQL.createJoke(foundEntries));
+                jokeBook.addJoke(JokeFillerSQL.createJoke(foundEntries));
             }
             foundEntries.close();
             statement.close();
@@ -42,7 +37,8 @@ public class SQLDAO implements JokeDAO {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return jokes;
+        jokeBook.printJokeBook();
+        return jokeBook;
     }
 
 }
