@@ -18,7 +18,7 @@ public class JokeBook {
     public String printJokeBook() {
         String jokeString = "";
         for (Joke joke : jokes) {
-            jokeString += joke.toString() + " ";
+            jokeString += joke.toString() + " " + "\n";
         }
         System.out.println(jokeString);
         return jokeString;

@@ -6,15 +6,14 @@ import bbw.km.model.JokeBook;
 import java.util.List;
 
 public interface JokeDAO {
-//
-//
-//    void addJoke(Joke joke);
-//
-//    void updateJoke(Joke joke);
-//
-//    void deleteJoke(Joke joke);
-//
-//    Object getJokeById(int id);
+
+
+    void createJoke(Joke joke);
+
+    void updateJoke(Joke joke);
+
+    void deleteJoke(Joke joke);
+
 
     JokeBook getAllJokes();
 }
