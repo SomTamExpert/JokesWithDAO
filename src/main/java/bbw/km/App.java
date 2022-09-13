@@ -1,17 +1,17 @@
 package bbw.km;
 
-import bbw.km.dao.ACCDBDAO;
 import bbw.km.dao.DBAccessFactory;
 import bbw.km.dao.JokeDAO;
-import bbw.km.dao.SQLDAO;
 import bbw.km.model.Joke;
 
 import java.sql.Date;
-import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 
 /**
- * Hello world!
+ * Class App
+ *
+ * @author marco
+ * @version 13.09.2022
  */
 public class App {
     public static void main(String[] args) {

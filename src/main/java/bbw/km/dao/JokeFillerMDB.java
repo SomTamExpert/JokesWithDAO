@@ -5,6 +5,12 @@ import bbw.km.model.Joke;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+/**
+ * Class JokerFillerMDB
+ *
+ * @author marco
+ * @version 13.09.2022
+ */
 public class JokeFillerMDB {
     public static void fillJoke(Joke joke, ResultSet resultset) throws SQLException {
         joke.setId(resultset.getInt("jokeid"));

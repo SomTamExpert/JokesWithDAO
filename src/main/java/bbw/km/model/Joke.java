@@ -3,6 +3,12 @@ package bbw.km.model;
 
 import java.sql.Date;
 
+/**
+ * Class Joke
+ *
+ * @author marco
+ * @version 13.09.2022
+ */
 public class Joke {
     private int id;
     private String joke;

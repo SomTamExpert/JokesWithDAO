@@ -5,6 +5,12 @@ import bbw.km.model.JokeBook;
 
 import java.sql.*;
 
+/**
+ * Class ACCDBDAO
+ *
+ * @author marco
+ * @version 13.09.2022
+ */
 public class ACCDBDAO implements JokeDAO {
 
     public static Connection getConnection() throws SQLException, ClassNotFoundException {
