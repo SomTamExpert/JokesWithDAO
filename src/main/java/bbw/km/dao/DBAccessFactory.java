@@ -13,6 +13,8 @@ public class DBAccessFactory {
             return new SQLDAO();
         } else if (id.equals("MDB")) {
             return new ACCDBDAO();
+        } else if (id.equals("MONGO")) {
+            return new MONGODAO();
         } else {
             return null;
         }

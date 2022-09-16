@@ -2,6 +2,7 @@ package bbw.km;
 
 import bbw.km.dao.DBAccessFactory;
 import bbw.km.dao.JokeDAO;
+import bbw.km.dao.MONGODAO;
 import bbw.km.model.Joke;
 
 import java.sql.Date;
@@ -70,6 +71,25 @@ public class App {
         //deleting joke from mdb database
         accdbdao.deleteJoke(joke2);
 
+        // get the DAO and choose mongo database
+        MONGODAO mongodao = (MONGODAO) dbAccessFactory.getDataBaseAccess("MONGO");
+        mongodao.getAllJokes();
+
+        //adding new joke to mongo database
+        Joke joke3 = new Joke();
+        try {
+            joke3.setUpJoke(6, "What did the router say to the doctor? 'It hurts when IP'",new java.util.Date(), 3);
+            mongodao.createJoke(joke3);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        //updating joke in mongo database
+        joke3.setRating(9);
+        mongodao.updateJoke(joke3);
+
+        //deleting joke from mongo database
+        mongodao.deleteJoke(joke3);
 
     }
 }

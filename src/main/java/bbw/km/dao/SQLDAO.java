@@ -52,7 +52,7 @@ public class SQLDAO implements JokeDAO {
             PreparedStatement statement = getConnection().prepareStatement("INSERT INTO joke (id, joke, date, rating) VALUES (?, ?, ?, ?)");
             statement.setInt(1, joke.getId());
             statement.setString(2, joke.getJoke());
-            statement.setDate(3, joke.getDate());
+            statement.setDate(3, (Date) joke.getDate());
             statement.setInt(4, joke.getRating());
 
             int rowInserted = statement.executeUpdate();
@@ -74,7 +74,7 @@ public class SQLDAO implements JokeDAO {
         try {
             PreparedStatement statement = getConnection().prepareStatement("UPDATE joke SET joke = ?, date = ?, rating = ? WHERE id = ?");
             statement.setString(1, joke.getJoke());
-            statement.setDate(2, joke.getDate());
+            statement.setDate(2, (Date) joke.getDate());
             statement.setInt(3, joke.getRating());
             statement.setInt(4, joke.getId());
 

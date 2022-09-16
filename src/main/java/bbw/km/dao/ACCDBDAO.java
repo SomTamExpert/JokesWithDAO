@@ -50,7 +50,7 @@ public class ACCDBDAO implements JokeDAO {
             statement.setInt(1, joke.getId());
             statement.setString(2, joke.getJoke());
             statement.setInt(3, joke.getRating());
-            statement.setDate(4, joke.getDate());
+            statement.setDate(4, (Date) joke.getDate());
 
             int rowInserted = statement.executeUpdate();
             if (rowInserted > 0) {
@@ -73,7 +73,7 @@ public class ACCDBDAO implements JokeDAO {
             PreparedStatement statement = getConnection().prepareStatement("UPDATE joke SET content = ?, rating = ?, date = ? WHERE jokeid = ?");
             statement.setString(1, joke.getJoke());
             statement.setInt(2, joke.getRating());
-            statement.setDate(3, joke.getDate());
+            statement.setDate(3, (Date) joke.getDate());
             statement.setInt(4, joke.getId());
 
             int rowUpdated = statement.executeUpdate();
