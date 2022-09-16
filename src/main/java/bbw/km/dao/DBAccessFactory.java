@@ -1,4 +1,4 @@
-package bbw.km.gui.dao;
+package bbw.km.dao;
 
 /**
  * Class DBAccessFactory

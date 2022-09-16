@@ -1,4 +1,4 @@
-package bbw.km.gui;
+package bbw.km;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

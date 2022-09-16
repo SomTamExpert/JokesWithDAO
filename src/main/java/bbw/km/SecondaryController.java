@@ -1,9 +1,9 @@
-package bbw.km.gui;
+package bbw.km;
 
-import bbw.km.gui.dao.DBAccessFactory;
-import bbw.km.gui.dao.JokeDAO;
-import bbw.km.gui.dao.MONGODAO;
-import bbw.km.gui.model.Joke;
+import bbw.km.dao.DBAccessFactory;
+import bbw.km.dao.JokeDAO;
+import bbw.km.dao.MONGODAO;
+import bbw.km.model.Joke;
 import javafx.fxml.FXML;
 
 import java.io.IOException;

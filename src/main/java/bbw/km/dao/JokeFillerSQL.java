@@ -1,6 +1,6 @@
-package bbw.km.gui.dao;
+package bbw.km.dao;
 
-import bbw.km.gui.model.Joke;
+import bbw.km.model.Joke;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

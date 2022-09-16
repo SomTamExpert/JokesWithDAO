@@ -1,5 +1,5 @@
-package bbw.km.gui.dao;
-import bbw.km.gui.model.Joke;
+package bbw.km.dao;
+import bbw.km.model.Joke;
 import org.bson.Document;
 import java.text.ParseException;
 

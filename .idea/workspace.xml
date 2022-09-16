@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e66834a0-bceb-417f-8353-ec3a72a1fa1e" name="Changes" comment="add mongo db connection, crud functionality">
+      <change afterPath="$PROJECT_DIR$/DBBasisGui.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bbw/km/PrimaryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bbw/km/SecondaryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bbw/km/primary.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bbw/km/secondary.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bbw/km/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bbw/km/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bbw/km/dao/ACCDBDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bbw/km/dao/ACCDBDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bbw/km/dao/JokeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bbw/km/dao/JokeDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bbw/km/dao/JokeFillerMONGO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bbw/km/dao/JokeFillerMONGO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bbw/km/dao/MONGODAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bbw/km/dao/MONGODAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bbw/km/dao/SQLDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bbw/km/dao/SQLDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bbw/km/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bbw/km/dao/ACCDBDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bbw/km/dao/DBAccessFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bbw/km/dao/JokeDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bbw/km/dao/JokeFillerMDB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bbw/km/dao/JokeFillerMONGO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bbw/km/dao/JokeFillerSQL.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bbw/km/dao/MONGODAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bbw/km/dao/SQLDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bbw/km/model/Joke.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bbw/km/model/JokeBook.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="module-info" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="develop" />
+                    <option name="lastUsedInstant" value="1663348731" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1663348730" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2EAfCYZDaTci449k02P83Ps6o4q" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Project.color": "232f2e",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/marco/workspace/bbw_coding_projects/Modul_151/JokesWithDAO",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\marco\workspace\bbw_coding_projects\Modul_411\JokesWithDAO\src\main\resources\bbw.km" />
+      <recent name="C:\Users\marco\workspace\bbw_coding_projects\Modul_411\JokesWithDAO" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bbw.km.App" />
+      <module name="JokesWithDAO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bbw.km.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e66834a0-bceb-417f-8353-ec3a72a1fa1e" name="Changes" comment="" />
+      <created>1662043184214</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1662043184214</updated>
+      <workItem from="1662043185660" duration="1432000" />
+      <workItem from="1662486560622" duration="26000" />
+      <workItem from="1662486705645" duration="11977000" />
+      <workItem from="1663011975349" duration="4350000" />
+      <workItem from="1663046578883" duration="1455000" />
+      <workItem from="1663078065902" duration="10583000" />
+      <workItem from="1663180583212" duration="633000" />
+      <workItem from="1663246590105" duration="28985000" />
+      <workItem from="1663353222027" duration="204000" />
+      <workItem from="1663353438298" duration="155000" />
+      <workItem from="1663353712828" duration="3600000" />
+    </task>
+    <task id="LOCAL-00001" summary="deleted JokeDAOImpl.java, added JokeFillerSQL.java and used it in SQLDAO.java to create a List of jokes from sq query.">
+      <created>1663013095821</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1663013095822</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added JokeFillerSQL.java and used it in SQLDAO.java create a List of jokes from sql query.">
+      <created>1663016762052</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1663016762052</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add crud for sql and accdb dao, add dbaccessfactory, instantiated joke with crud examples in app">
+      <created>1663102811969</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663102811969</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add crud for sql and accdb dao, add dbaccessfactory, instantiated joke with crud examples in app">
+      <created>1663102906492</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1663102906492</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add class description">
+      <created>1663103275589</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1663103275589</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add untracked files">
+      <created>1663103648573</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1663103648573</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="deleted JokeDAOImpl.java, added JokeFillerSQL.java and used it in SQLDAO.java to create a List of jokes from sq query." />
+    <MESSAGE value="added JokeFillerSQL.java and used it in SQLDAO.java create a List of jokes from sql query." />
+    <MESSAGE value="add crud for sql and accdb dao, add dbaccessfactory, instantiated joke with crud examples in app" />
+    <MESSAGE value="add class description" />
+    <MESSAGE value="add untracked files" />
+    <MESSAGE value="add mongo db connection, crud functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="add mongo db connection, crud functionality" />
+  </component>
+</project>

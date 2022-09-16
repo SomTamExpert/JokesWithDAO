@@ -1,4 +1,4 @@
-package bbw.km.gui;
+package bbw.km;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

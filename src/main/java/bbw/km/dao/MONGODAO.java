@@ -1,8 +1,8 @@
-package bbw.km.gui.dao;
+package bbw.km.dao;
 
 
-import bbw.km.gui.model.Joke;
-import bbw.km.gui.model.JokeBook;
+import bbw.km.model.Joke;
+import bbw.km.model.JokeBook;
 import com.mongodb.Block;
 import com.mongodb.client.*;
 import org.bson.Document;

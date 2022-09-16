@@ -1,17 +1,20 @@
-package bbw.km.gui;
-import bbw.km.gui.dao.DBAccessFactory;
-import bbw.km.gui.dao.JokeDAO;
-import bbw.km.gui.model.Joke;
-import bbw.km.gui.model.JokeBook;
+package bbw.km;
+import bbw.km.dao.JokeDAO;
+import bbw.km.dao.DBAccessFactory;
+import bbw.km.model.Joke;
+import bbw.km.model.JokeBook;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.text.Text;
+
 import java.sql.Date;
 
 public class PrimaryController {
 
     @FXML
-    private Label lblOut;
+    private Text lblOut;
+
 
     @FXML
     private TextField txtJoke;
@@ -39,6 +42,7 @@ public class PrimaryController {
     public void listAllJokes() {
         JokeBook jokeBook = sqldao.getAllJokes();
         lblOut.setText(jokeBook.printJokeBook());
+        lblOut.wrappingWidthProperty().set(550);
     }
 
     @FXML
