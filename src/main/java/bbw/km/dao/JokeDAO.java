@@ -1,7 +1,7 @@
-package bbw.km.dao;
+package bbw.km.gui.dao;
 
-import bbw.km.model.Joke;
-import bbw.km.model.JokeBook;
+import bbw.km.gui.model.Joke;
+import bbw.km.gui.model.JokeBook;
 
 
 /**
@@ -17,7 +17,7 @@ public interface JokeDAO {
 
     void updateJoke(Joke joke);
 
-    void deleteJoke(Joke joke);
+    void deleteJoke(int id);
 
 
     JokeBook getAllJokes();

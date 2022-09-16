@@ -1,4 +1,4 @@
-package bbw.km.model;
+package bbw.km.gui.model;
 
 import java.util.ArrayList;
 import java.util.List;

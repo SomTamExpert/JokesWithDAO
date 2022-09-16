@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="498.0" prefWidth="432.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bbw.km.gui.PrimaryController">
+    <children>
+        <Label alignment="CENTER" layoutX="128.0" layoutY="14.0" prefHeight="27.0" prefWidth="177.0" text="DAO Pattern with Jokes" textAlignment="CENTER">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="18.0" layoutY="38.0" text="Jokes from SQL Database:">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="21.0" layoutY="71.0" text="Id:" />
+        <TextField fx:id="txtId" layoutX="81.0" layoutY="67.0" prefHeight="25.0" prefWidth="177.0" />
+        <Label layoutX="21.0" layoutY="71.0" text="content:" />
+        <TextField fx:id="txtJoke" layoutX="81.0" layoutY="67.0" prefHeight="25.0" prefWidth="177.0" />
+        <Label layoutX="18.0" layoutY="108.0" text="Date:" />
+        <TextField fx:id="txtDate" layoutX="81.0" layoutY="104.0" prefHeight="25.0" prefWidth="177.0" />
+        <Label layoutX="18.0" layoutY="145.0" text="Rating:" />
+        <TextField fx:id="txtRating" layoutX="81.0" layoutY="141.0" prefHeight="25.0" prefWidth="177.0" />
+        <Button layoutX="17.0" layoutY="144.0" onAction="#listAllJokes" prefHeight="25.0" prefWidth="65.0" text="List" />
+        <Button layoutX="88.0" layoutY="144.0" onAction="#addJoke" prefHeight="25.0" prefWidth="65.0" text="Add" />
+        <Button layoutX="211.0" layoutY="144.0" onAction="#deleteJoke" prefHeight="25.0" prefWidth="65.0" text="Delete" />
+        <Button layoutX="282.0" layoutY="145.0" onAction="#updateJoke" prefHeight="25.0" prefWidth="65.0" text="Update" />
+        <ScrollPane layoutX="16.0" layoutY="187.0" prefHeight="261.0" prefWidth="398.0">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="535.0" prefWidth="573.0">
+                    <children>
+                        <Label fx:id="lblOut" alignment="TOP_LEFT" prefHeight="534.0" prefWidth="561.0" style="-fx-background-color: #AFCA0A#AFCA0A;" />
+                    </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+        <Button layoutX="362.0" layoutY="459.0" onAction="#switchToSecondary" text="page 2" />
+    </children>
+</Pane>

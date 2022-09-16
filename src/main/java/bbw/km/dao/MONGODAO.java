@@ -1,8 +1,8 @@
-package bbw.km.dao;
+package bbw.km.gui.dao;
 
 
-import bbw.km.model.Joke;
-import bbw.km.model.JokeBook;
+import bbw.km.gui.model.Joke;
+import bbw.km.gui.model.JokeBook;
 import com.mongodb.Block;
 import com.mongodb.client.*;
 import org.bson.Document;
@@ -63,10 +63,10 @@ public class MONGODAO implements JokeDAO {
     }
 
     @Override
-    public void deleteJoke(Joke joke) {
+    public void deleteJoke(int id) {
         System.out.println("MONGODAO.deleteJoke");
         MongoCollection<Document> collection = createConnection();
-        collection.deleteOne(new Document("id", joke.getId()));
+        collection.deleteOne(new Document("id", id));
         getAllJokes();
     }
 }

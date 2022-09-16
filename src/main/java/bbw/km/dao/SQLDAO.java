@@ -1,7 +1,7 @@
-package bbw.km.dao;
+package bbw.km.gui.dao;
 
-import bbw.km.model.Joke;
-import bbw.km.model.JokeBook;
+import bbw.km.gui.model.JokeBook;
+import bbw.km.gui.model.Joke;
 
 import java.sql.*;
 
@@ -92,11 +92,11 @@ public class SQLDAO implements JokeDAO {
         }
     }
 
-    public void deleteJoke(Joke joke) {
+    public void deleteJoke(int id) {
         System.out.println("SQLDAO.deleteJoke");
         try {
             PreparedStatement statement = getConnection().prepareStatement("DELETE FROM joke WHERE id = ?");
-            statement.setInt(1, joke.getId());
+            statement.setInt(1, id);
 
             int rowDeleted = statement.executeUpdate();
             if (rowDeleted > 0) {

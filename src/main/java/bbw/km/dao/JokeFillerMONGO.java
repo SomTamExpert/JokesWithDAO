@@ -1,17 +1,7 @@
-package bbw.km.dao;
-
-import bbw.km.model.Joke;
-
-import netscape.javascript.JSObject;
+package bbw.km.gui.dao;
+import bbw.km.gui.model.Joke;
 import org.bson.Document;
-
-import java.sql.Date;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
-
-import org.bson.types.ObjectId;
 
 
 public class JokeFillerMONGO {
