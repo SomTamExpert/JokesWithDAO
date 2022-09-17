@@ -1,4 +1,5 @@
 package bbw.km;
+
 import bbw.km.dao.JokeDAO;
 import bbw.km.dao.DBAccessFactory;
 import bbw.km.model.Joke;
@@ -14,7 +15,6 @@ public class PrimaryController {
 
     @FXML
     private Text lblOut;
-
 
     @FXML
     private TextField txtJoke;
@@ -33,6 +33,11 @@ public class PrimaryController {
         App.setRoot("secondary");
     }
 
+    @FXML
+    private void switchToThirdly() throws Exception {
+        App.setRoot("thirdly");
+    }
+
     Joke joke = new Joke();
     DBAccessFactory dbAccessFactory = new DBAccessFactory();
 
@@ -42,12 +47,13 @@ public class PrimaryController {
     public void listAllJokes() {
         JokeBook jokeBook = sqldao.getAllJokes();
         lblOut.setText(jokeBook.printJokeBook());
-        lblOut.wrappingWidthProperty().set(550);
+        lblOut.wrappingWidthProperty().set(950);
+        lblOut.setFont(new javafx.scene.text.Font(16));
     }
 
     @FXML
     public void addJoke() {
-        if(txtJoke.getText().isEmpty() || txtRating.getText().isEmpty() || txtDate.getText().isEmpty() || txtId.getText().isEmpty()) {
+        if (txtJoke.getText().isEmpty() || txtRating.getText().isEmpty() || txtDate.getText().isEmpty() || txtId.getText().isEmpty()) {
             lblOut.setText("Please fill in all fields!");
         } else {
             try {
@@ -63,7 +69,7 @@ public class PrimaryController {
 
     @FXML
     public void updateJoke() {
-        if(txtJoke.getText().isEmpty() || txtRating.getText().isEmpty() || txtDate.getText().isEmpty() || txtId.getText().isEmpty()) {
+        if (txtJoke.getText().isEmpty() || txtRating.getText().isEmpty() || txtDate.getText().isEmpty() || txtId.getText().isEmpty()) {
             lblOut.setText("Please fill in all fields!");
         } else {
             try {
@@ -78,11 +84,11 @@ public class PrimaryController {
 
     @FXML
     public void deleteJoke() {
-        if(txtId.getText().isEmpty()) {
+        if (txtId.getText().isEmpty()) {
             lblOut.setText("Please fill in the ID field!");
         } else {
-                sqldao.deleteJoke(Integer.parseInt(txtId.getText()));
-                lblOut.setText("Joke deleted!");
+            sqldao.deleteJoke(Integer.parseInt(txtId.getText()));
+            lblOut.setText("Joke deleted!");
         }
     }
 }

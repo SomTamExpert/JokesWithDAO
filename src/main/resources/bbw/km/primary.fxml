@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 
 <?import javafx.scene.text.Text?>
-<Pane prefHeight="650.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1"
+<Pane prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1"
       fx:controller="bbw.km.PrimaryController">
     <children>
         <Label alignment="CENTER" layoutX="128.0" layoutY="14.0" prefHeight="27.0" text="DAO Pattern with Jokes"
@@ -38,17 +38,18 @@
                 text="Delete"/>
         <Button layoutX="349.0" layoutY="227.0" onAction="#updateJoke" prefHeight="25.0" prefWidth="65.0"
                 text="Update"/>
-        <ScrollPane layoutX="16.0" layoutY="300.0" prefHeight="261.0" prefWidth="568.0">
+        <ScrollPane layoutX="16.0" layoutY="300.0" prefHeight="261.0" prefWidth="968.0">
             <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="300.0" prefWidth="568.0">
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="300.0" prefWidth="968.0">
                     <children>
-                        <Label alignment="TOP_LEFT" prefHeight="300.0" prefWidth="568.0"
+                        <Label alignment="TOP_LEFT" prefHeight="300.0" prefWidth="968.0"
                                style="-fx-background-color: #efc011#efc011;"/>
                         <Text fx:id="lblOut" layoutY="15"/>
                     </children>
                 </AnchorPane>
             </content>
         </ScrollPane>
-        <Button layoutX="532.0" layoutY="600.0" onAction="#switchToSecondary" text="page 2"/>
+        <Button layoutX="532.0" layoutY="600.0" onAction="#switchToSecondary" text="To Jokes From Access Database"/>
+        <Button layoutX="532.0" layoutY="600.0" onAction="#switchToThirdly" text="To Jokes From Mongo Database"/>
     </children>
 </Pane>
