@@ -40,16 +40,16 @@
                 text="Update"/>
         <ScrollPane layoutX="16.0" layoutY="300.0" prefHeight="261.0" prefWidth="968.0">
             <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="300.0" prefWidth="968.0">
-                    <children>
-                        <Label alignment="TOP_LEFT" prefHeight="300.0" prefWidth="968.0"
-                               style="-fx-background-color: #efc011#efc011;"/>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="300.0" prefWidth="968.0"  style="-fx-background-color: linear-gradient(to right bottom, #de61d4, #efc011);">
+
+                <children>
+                        <Label alignment="TOP_LEFT" prefHeight="300.0" prefWidth="968.0"></Label>
                         <Text fx:id="lblOut" layoutY="15"/>
                     </children>
                 </AnchorPane>
             </content>
         </ScrollPane>
-        <Button layoutX="532.0" layoutY="600.0" onAction="#switchToPrimary" text="To Jokes From SQL Database"/>
-        <Button layoutX="532.0" layoutY="600.0" onAction="#switchToThirdly" text="To Jokes From Mongo Database"/>
+        <Button layoutX="598.0" layoutY="600.0" onAction="#switchToPrimary" text="To Jokes From SQL Database"/>
+        <Button layoutX="798.0" layoutY="600.0" onAction="#switchToThirdly" text="To Jokes From Mongo Database"/>
     </children>
 </Pane>

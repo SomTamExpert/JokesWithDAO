@@ -10,7 +10,7 @@
 
 <?import javafx.scene.text.Text?>
 <Pane prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="bbw.km.PrimaryController">
+      fx:controller="bbw.km.ThirdlyController">
     <children>
         <Label alignment="CENTER" layoutX="128.0" layoutY="14.0" prefHeight="27.0" text="DAO Pattern with Jokes"
                textAlignment="CENTER">
@@ -18,7 +18,7 @@
                 <Font size="18.0"/>
             </font>
         </Label>
-        <Label layoutX="18.0" layoutY="60.0" text="Jokes from SQL Database:">
+        <Label layoutX="18.0" layoutY="60.0" text="Jokes from Mongo Database:">
             <font>
                 <Font name="System Bold" size="14.0"/>
             </font>
@@ -40,15 +40,16 @@
                 text="Update"/>
         <ScrollPane layoutX="16.0" layoutY="300.0" prefHeight="261.0" prefWidth="968.0">
             <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="300.0" prefWidth="968.0"  style="-fx-background-color: linear-gradient(to right bottom, #cc631a, #42c01c);">
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="300.0" prefWidth="968.0"  style="-fx-background-color: linear-gradient(to right bottom, #61D8DE, #E839F6);">
                     <children>
                         <Label alignment="TOP_LEFT" prefHeight="300.0" prefWidth="968.0"></Label>
+
                         <Text fx:id="lblOut" layoutY="15"/>
                     </children>
                 </AnchorPane>
             </content>
         </ScrollPane>
-        <Button layoutX="598.0" layoutY="600.0" onAction="#switchToSecondary" text="To Jokes From Access Database"/>
-        <Button layoutX="798.0" layoutY="600.0" onAction="#switchToThirdly" text="To Jokes From Mongo Database"/>
+        <Button layoutX="598.0" layoutY="600.0" onAction="#switchToPrimary" text="To Jokes From SQL Database"/>
+        <Button layoutX="798.0" layoutY="600.0" onAction="#switchToSecondary" text="To Jokes From Access Database"/>
     </children>
 </Pane>
